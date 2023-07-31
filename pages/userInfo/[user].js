@@ -18,7 +18,6 @@ const userInfo = () => {
     console.log(`useEffect triggered`);
     if (router.isReady) {
       setSearchQuery(Id);
-
       setIndex(details.filter((v) => v.id === Number(Id)));
     }
   }, [Id]);
